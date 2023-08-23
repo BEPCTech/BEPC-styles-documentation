@@ -1,0 +1,260 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.inline-block-container {
+    display: inline-block;
+  }
+  
+  .inline-svg {
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  
+  .inline-text {
+    display: inline-block;
+    vertical-align: middle;
+  }
+  
+  .parentDiv{
+    position: relative;
+  }
+
+  .copyButton{
+    position: absolute;
+    right: 5px;
+    top: 5px;
+  }
+
+  /*------- Colores BEPC ---------*/
+  .bepc-color-primary{
+    background-color: #234367;
+  }
+  .bepc-color-primary-hover{
+    background-color: #152233;
+  }
+  .bepc-color-secondary{
+    background-color: #DDC82E;
+  }
+  .bepc-icon-color{
+    background-color: #809FB8;
+  }
+  .bepc-icon-color-hover{
+    background-color: #D9E1E7;
+  }
+  .bepc-positive-color{
+    background-color: #00854D;
+  }
+  .bepc-negative-color{
+    background-color: #D83A52;
+  }
+  .bepc-warning-color{
+    background-color: #FFCB00;
+  }
+
+ /*------- Tipografias BEPC ---------*/
+ @font-face {
+  font-family: 'Poppins-ExtraBold'; 
+  src: url('./fonts/Poppins-ExtraBold.ttf');
+}
+  @font-face {
+    font-family: 'Poppins-Bold'; 
+    src: url('./fonts/Poppins-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-SemiBold'; 
+    src: url('./fonts/Poppins-SemiBold.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Medium'; 
+    src: url('./fonts/Poppins-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Regular'; 
+    src: url('./fonts/Poppins-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Light'; 
+    src: url('./fonts/Poppins-Light.ttf');
+  }
+  @font-face {
+    font-family: 'Poppins-Thin'; 
+    src: url('./fonts/Poppins-Thin.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Bold'; 
+    src: url('./fonts/Figtree-Bold.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Medium'; 
+    src: url('./fonts/Figtree-Medium.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Regular'; 
+    src: url('./fonts/Figtree-Regular.ttf');
+  }
+  @font-face {
+    font-family: 'Figtree-Light'; 
+    src: url('./fonts/Figtree-Light.ttf');
+  }
+
+  /*------ Declaracion de tipografias BEPC ------*/
+   .bepc-h1{
+    font-family: Poppins-Bold!important;
+    font-size: 30px!important;
+  }
+  .bepc-h2{
+    font-family: Poppins-Bold!important;
+    font-size: 24px!important;
+  }
+  .bepc-h3{
+    font-family: Poppins-Regular!important;
+    font-size: 24px!important;
+  }
+  .bepc-h4{
+    font-family: Poppins-Bold!important;
+    font-size: 18px!important;
+  }
+  .bepc-h5{
+    font-family: Poppins-Bold!important;
+    font-size: 16px!important;
+  }
+  .figtree-text{
+    font-family: Figtree-Regular!important;
+    font-size: 14px!important;
+  }
+  .figtree-p{
+    font-family: Figtree-Regular!important;
+    font-size: 16px!important;
+  }
+  .figtree-subtext{
+    font-family: Figtree-Regular!important;
+    font-size: 14px!important;
+  }
+  .figtree-link{
+    font-family: Figtree-Regular!important;
+    font-size: 14px!important;
+    color: blue;
+  }
+
+  /*------ Copy to clipboard ------*/
+  .copy-button-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  /*------ Fixear el sidebar ------*/
+  .sidebar-scrollarea{
+    position: fixed!important;
+    top: 40px!important;
+    left: 0!important;
+    width: 250px!important;
+  }
+  /*------ Main content ------*/
+  .main-content{
+    margin-left: 250px!important;
+    margin-top: 40px;
+  }
+
+  /*------ Top menu ------*/
+  .top-menu{
+    position: fixed!important;
+    top: 0!important;
+    left: 0!important;
+    height: 40px!important;
+    width: 100%!important;
+    z-index: 9999;
+  }
+
+  /*------ Botones ------*/
+  .bepc-light-button{
+    background-color: #FFFFFF!important;
+    border: 1px solid #323338;
+    color: #323338!important;
+  }
+  .bepc-dark-button{
+    background-color: #FFFFFF!important;
+    border: 1px solid #676879;
+    color: #676879!important;
+  }
+
+  .bepc-disable-button{
+    background-color: #809FB8!important;
+    color: #FFFFFF!important;
+  }
+
+  .bepc-placeholder-button{
+    background-color: #000000!important;
+    color: #D9E1E7!important;
+  }
+
+  .bepc-link-button{
+    background-color: #FFFFFF!important;
+    border: 1px solid #1F76C2;
+    color: #1F76C2!important;
+  }
+  /*------ Tabla BEPC ------*/
+  .table-name{
+    font-family: Poppins-Bold;
+    font-size: 18px;
+    color: #FFC82E;
+  }
+  .table {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 20px;
+  }
+  
+  .table th, .table td {
+    
+    text-align: center;
+  }
+  
+  .table th {
+    background-color: #006;
+    color: #323338;
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+  }
+  
+  .table td {
+    font-family: Figtree-Regular!important;
+    font-size: 14px;
+    
+  }
+  
+  .table .assignee {
+    text-align: center;
+  }
+  .th-primary, .td-primary{
+    width: 300px!important;
+    padding: 10px;
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+  }
+
+  .th-secondary{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFC82E!important;
+  }
+  .td-secondary{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFE59D!important;
+  }
+  .th-checkbox{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
+  .td-checkbox{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
