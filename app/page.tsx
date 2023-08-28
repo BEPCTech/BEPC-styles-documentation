@@ -78,11 +78,6 @@ import darkTabJs from './codeExamples/darkTabJs';
 
 import { Scroll } from 'lucide-react';
 
-export const metadata: Metadata = {
-title: "BEPC Design System Guidelines",
-description: "Example BEPC web design using components.",
-}
-
 function HomePage() {
 const [copied, setCopied] = useState(false);
 
