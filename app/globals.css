@@ -165,7 +165,7 @@
     left: 0!important;
     height: 40px!important;
     width: 100%!important;
-    z-index: 9999;
+    z-index: 49;
   }
 
   /*------ Botones ------*/
@@ -195,6 +195,12 @@
     border: 1px solid #1F76C2;
     color: #1F76C2!important;
   }
+
+  /*------ Card BEPC Dark ------*/
+  .dark-card{
+    background-color: #323338;
+  }
+
   /*------ Tabla BEPC ------*/
   .table-name{
     font-family: Poppins-Bold;
@@ -206,17 +212,13 @@
     border-collapse: collapse;
     border-radius: 5px;
     overflow: hidden;
-    margin-bottom: 20px;
   }
   
   .table th, .table td {
-    
     text-align: center;
   }
   
   .table th {
-    background-color: #006;
-    color: #323338;
     font-size: 14px;
     font-family: Figtree-Regular;
     font-weight: lighter;
@@ -234,6 +236,7 @@
   .th-primary, .td-primary{
     width: 300px!important;
     padding: 10px;
+    color: #323338;
     background-color: #FFFFFF!important;
     border: 1px solid #D9E1E7;
   }
@@ -257,4 +260,378 @@
     background-color: #FFFFFF!important;
     border: 1px solid #D9E1E7;
     width: 30px!important;
+  }  
+
+   /*------ Tabla BEPC Dark ------*/
+   .table-name-dark{
+    font-family: Poppins-Bold;
+    font-size: 18px;
+    color: #FFC82E;
   }
+   .table-dark{
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+   }
+   .table-dark th {
+    color: #FFFFFF!important;
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .table-dark td{
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+    text-align: center;
+  }
+  .th-primary-dark, .td-primary-dark{
+    width: 300px!important;
+    padding: 10px;
+    color: #FFFFFF;
+    background-color: #45443f!important;
+    border: 1px solid #9e9c96;
+  }
+  .th-secondary-dark{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFC82E!important;
+  }
+  .td-secondary-dark{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #FFE59D!important;
+  }
+  .th-checkbox-dark{
+    background-color: #45443f!important;
+    border: 1px solid #9e9c96;
+    width: 30px!important;
+  }
+  .td-checkbox-dark{
+    background-color: #45443f!important;
+    border: 1px solid #9e9c96;
+    width: 30px!important;
+  }
+
+  /*------ Tabla BEPC variant 1 ------*/
+  .table-name-v1{
+    font-family: Poppins-Bold;
+    font-size: 18px;
+    color: #234367;
+  }
+  .table-v1 {
+    width: 100%;
+    border-collapse: collapse;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+  
+  .table-v1 th, .table-v1 td {
+    text-align: center;
+  }
+  
+  .table-v1 th {
+    font-size: 14px;
+    font-family: Figtree-Regular;
+    font-weight: lighter;
+  }
+  
+  .table td {
+    font-family: Figtree-Regular!important;
+    font-size: 14px;
+  }
+  
+  .table-v1 .assignee {
+    text-align: center;
+  }
+  .th-primary-v1, .td-primary-v1{
+    width: 300px!important;
+    padding: 10px;
+    color: #323338;
+    font-family: Figtree-Regular;
+    font-size: 14px;
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+  }
+
+  .th-secondary-v1{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #234367!important;
+  }
+  .td-secondary-v1{
+    padding: 3px!important;
+    width: 3px!important;
+    background-color: #3c628f!important;
+  }
+  .th-checkbox-v1{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
+  .td-checkbox-v1{
+    background-color: #FFFFFF!important;
+    border: 1px solid #D9E1E7;
+    width: 30px!important;
+  }
+
+    /*------ Tabla BEPC variant 2 ------*/
+    .table-name-v2{
+      font-family: Poppins-Bold;
+      font-size: 18px;
+      color: #00854D;
+    }
+    .table-v2 {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+    
+    .table-v2 th, .table-v2 td {
+      text-align: center;
+    }
+    
+    .table-v2 th {
+      font-size: 14px;
+      font-family: Figtree-Regular;
+      font-weight: lighter;
+    }
+    
+    .table-v2 td {
+      font-family: Figtree-Regular!important;
+      font-size: 14px;
+    }
+    
+    .table-v2 .assignee {
+      text-align: center;
+    }
+    .th-primary-v2, .td-primary-v2{
+      width: 300px!important;
+      padding: 10px;
+      color: #323338;
+      font-family: Figtree-Regular;
+      font-size: 14px;
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+    }
+  
+    .th-secondary-v2{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #00854D!important;
+    }
+    .td-secondary-v2{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #13b672!important;
+    }
+    .th-checkbox-v2{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    }
+    .td-checkbox-v2{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    } 
+
+    /*------ Tabla BEPC variant 3 ------*/
+    .table-name-v3{
+      font-family: Poppins-Bold;
+      font-size: 18px;
+      color: #D83A52;
+    }
+    .table-v3 {
+      width: 100%;
+      border-collapse: collapse;
+      border-radius: 5px;
+      overflow: hidden;
+    }
+        
+    .table-v3 th, .table-v3 td {
+      text-align: center;
+    }
+        
+    .table-v3 th {
+      font-size: 14px;
+      font-family: Figtree-Regular;
+      font-weight: lighter;
+    }
+        
+    .table-v3 td {
+      font-family: Figtree-Regular!important;
+      font-size: 14px;
+    }
+        
+    .table-v3 .assignee {
+      text-align: center;
+    }
+    .th-primary-v3, .td-primary-v3{
+      width: 300px!important;
+      padding: 10px;
+      color: #323338;
+      font-family: Figtree-Regular;
+      font-size: 14px;
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+    }
+      
+    .th-secondary-v3{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #D83A52!important;
+    }
+    .td-secondary-v3{
+      padding: 3px!important;
+      width: 3px!important;
+      background-color: #f75d74!important;
+    }
+    .th-checkbox-v3{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    }
+    .td-checkbox-v3{
+      background-color: #FFFFFF!important;
+      border: 1px solid #D9E1E7;
+      width: 30px!important;
+    }
+
+    /*------ BEPC Tabs ------*/
+  
+    .btn-prim-navbar {
+      margin-left: auto
+    }
+  
+    .tab-menu-selected{
+    margin-top: 4px;
+    width: 100%;
+    height: 2px;
+    background-color: #234367;
+    }
+  
+    .tab-menu-option{
+    width: 100%;
+    }
+
+    .navbar-list{
+      display: inline-block;
+      margin: 5px; /* Espacio entre botones */
+      padding: 10px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+    }
+    .navbar-item {
+      display: inline-block;
+      padding: 10px;
+      margin: 5px 0; /* Ajusta los márgenes superior e inferior */
+    }
+      /*---------- Definicion de botones para tabs -----------*/
+
+  .btn-tab, .btn-tab-question{
+    border: none;
+    font-family: Figtree-Regular;
+    background-color: transparent;
+    color: #676879;
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .btn-tab-more{
+    border: none;
+    font-family: Figtree-Regular;
+    background-color: transparent;
+    color: #676879;
+  }
+
+  .btn-tab:hover, .btn-tab-more:hover, .btn-tab-question:hover{
+    background-color: #d9e1e7;
+    border-radius: 4px;
+  }
+
+  /*---------- Definicion de divisiones para tabs -----------*/
+  .division-line {
+    width: 1px;
+    margin-left: 10px;
+    margin-right: 10px;
+    height: 20px;
+    background-color: #CACACA;
+    display: inline-block;
+    vertical-align: middle;
+  }
+
+  .hr-menu{
+    padding: 0!important;
+    margin: 0;
+    margin-top: 0.4em;
+    margin-bottom: 1em;
+  }
+
+  /*------ BEPC Tab Dark ------*/
+  .btn-prim-navbar {
+    margin-left: auto
+  }
+
+  .tab-menu-selected-dark{
+  margin-top: 4px;
+  width: 100%;
+  height: 2px;
+  background-color: #3e74b3;
+  }
+
+  .tab-menu-option-dark{
+  width: 100%;
+  }
+
+  .navbar-list-dark{
+    display: inline-block;
+    margin: 5px; /* Espacio entre botones */
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  .navbar-item-dark {
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0; /* Ajusta los márgenes superior e inferior */
+  }
+    /*---------- Definicion de botones para tabs -----------*/
+
+.btn-tab-dark, .btn-tab-question-dark{
+  border: none;
+  font-family: Figtree-Regular;
+  background-color: transparent;
+  color: #FFFFFF;
+  padding-left: 8px;
+  padding-right: 8px;
+}
+
+.btn-tab-more-dark{
+  border: none;
+  font-family: Figtree-Regular;
+  background-color: transparent;
+  color: #676879;
+}
+
+.btn-tab-dark:hover, .btn-tab-more-dark:hover, .btn-tab-question-dark:hover{
+  background-color: #85898b;
+  border-radius: 4px;
+}
+
+  /*----- Se agrego esta clase al componente original de shadcn Dialog para ajustar el tamano del Dialo ------*/
+  .max-vw {
+    max-width: 80vw; /* Cambia este valor según tus necesidades */
+  }
+  
+  /*------ Se agrego esta clase para ajustar el tamano de los dialog ------*/
+.dialog-content {
+  max-height: 70vh; /* Establece una altura máxima para el contenido */
+  max-width: 75vw;
+  overflow-y: auto; /* Habilita el desplazamiento vertical si es necesario */
+}
