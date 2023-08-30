@@ -57,6 +57,8 @@ import BepcTableVariants from '@/components/custom-components/BepcTableVariants'
 import BepcTab from '@/components/custom-components/BepcTab'
 import BepcTabDark from '@/components/custom-components/BepcTabDark';
 import BepcButton from '@/components/custom-components/BepcButton';
+import BepcButtonOutline from '@/components/custom-components/BepcButtonOutline';
+import BepcIconButton from '@/components/custom-components/BepcIconButton'
 
 //String de codigos
 import howToUse from './codeExamples/howToUse';
@@ -78,6 +80,10 @@ import darkTabCss from './codeExamples/darkTabCss';
 import darkTabJs from './codeExamples/darkTabJs';
 import buttonHtml from './codeExamples/buttonHtml';
 import buttonCss from './codeExamples/buttonCss';
+import buttonOutlineHtml from './codeExamples/buttonOutlineHtml';
+import buttonOutlineCss from './codeExamples/buttonOutlineCss';
+import iconButtonHtml from './codeExamples/iconButtonHtml';
+import iconButtonCss from './codeExamples/iconButtonCss';
 
 import { Scroll } from 'lucide-react';
 
@@ -92,36 +98,6 @@ setCopied(false);
 };
 
 const { toast } = useToast()
-
-const _howToUse =
-<pre>{howToUse}</pre>;
-
-const _importPoppins =
-<pre>{importPoppins}</pre>;
-
-const _importFigtree =
-<pre>{importFigtree}</pre>;
-
-const _heroIcons =
-<pre>{heroIcons}</pre>;
-
-const _svgExample =
-<pre>{svgExample}</pre>;
-
-const _lightTableHtml =
-<pre>{lightTableHtml}</pre>;
-
-const _lightTableCss =
-<pre>{lightTableCss}</pre>;
-
-const _darkTableHtml =
-<pre>{darkTableHtml}</pre>;
-
-const _darkTableCss =
-<pre>{darkTableCss}</pre>;
-
-const _lightTabsHtml =
-<pre>{lightTabHtml}</pre>;
 
 const [hydrated, setHydrated] = React.useState(false);
 React.useEffect(() => {
@@ -258,6 +234,8 @@ return (
                         <br></br>
                       </div>
                     </div>
+
+                    {/*====== Colors ======*/}
 
                     <div className="menu-colors flex items-center justify-between">
                       <div className="space-y-1">
@@ -584,6 +562,8 @@ return (
 
                     <Separator className="my-4" />
 
+                    {/*====== Typography ======*/}
+
                     <div className="menu-typography flex items-center justify-between">
                       <div className="space-y-4">
                         <h3 className="text-2xl font-semibold tracking-tight">
@@ -700,6 +680,8 @@ return (
                     </Card>
 
                     <Separator className="my-4" />
+
+                    {/*====== Icons ======*/}
 
                     <div className="menu-icons flex items-center justify-between">
                       <div className="space-y-1">
@@ -851,6 +833,8 @@ return (
 
                     <Separator className="my-4" />
 
+                    {/*====== Themes ======*/}
+
                     <div className='menu-themes'>
                       <h3 className="text-2xl font-semibold tracking-tight inline-block-container">
                         <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
@@ -931,6 +915,8 @@ return (
                       <br></br>
                     </div>
 
+                    {/*====== Tables ======*/}
+
                     <div className="menu-colors flex items-center justify-between">
                       <div className="space-y-1">
                         <h3 className="text-2xl font-semibold tracking-tight">
@@ -992,12 +978,14 @@ return (
                     </Dialog>
                     <br></br>
 
+                    <Separator className="my-6" />
+
                     <h1 className="text-5x1 font-semibold tracking-tight my-3">Dark table example</h1>
                     <Card className=" dark-card my-2 p-3">
                       <BepcTableDark></BepcTableDark>
                     </Card>
 
-                    <p className='my-2'>Click here to see code</p>
+                    <p className='my-4'>Click here to see code</p>
 
                     <Dialog>
                       <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
@@ -1037,14 +1025,14 @@ return (
                       </DialogContent>
                     </Dialog>
 
-                    <br></br>
+                    <Separator className="my-6" />
 
                     <h1 className="text-5x1 font-semibold tracking-tight my-3">Table color variants</h1>
                     <Card className="my-2 p-3">
                       <BepcTableVariants></BepcTableVariants>
                     </Card>
 
-                    <p className='my-2'>Click here to see code</p>
+                    <p className='my-4'>Click here to see code</p>
 
                     <Dialog>
                       <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
@@ -1086,6 +1074,8 @@ return (
 
                     <Separator className="my-6" />
 
+                    {/*====== Tabs ======*/}
+
                     <div className="menu-colors flex items-center justify-between">
                       <div className="space-y-1">
                         <h3 className="text-2xl font-semibold tracking-tight">
@@ -1107,7 +1097,7 @@ return (
                       <BepcTab></BepcTab>
                     </Card>
 
-                    <p className='my-2'>Click here to see code</p>
+                    <p className='my-4'>Click here to see code</p>
 
                     <Dialog>
                       <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
@@ -1166,13 +1156,15 @@ return (
                         </DialogHeader>
                       </DialogContent>
                     </Dialog>
+                    
+                    <Separator className="my-6" />
 
                     <h1 className="text-5x1 font-semibold tracking-tight my-3">Dark tab example</h1>
                     <Card className='dark-card p-3'>
                       <BepcTabDark></BepcTabDark>
                     </Card>
 
-                    <p className='my-2'>Click here to see code</p>
+                    <p className='my-4'>Click here to see code</p>
 
                     <Dialog>
                       <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
@@ -1236,6 +1228,8 @@ return (
 
                     <Separator className="my-6" />
 
+                    {/*====== Buttons ======*/}
+
                     <div className="menu-colors flex items-center justify-between my-2">
                       <div className="space-y-1">
                         <h3 className="text-2xl font-semibold tracking-tight">
@@ -1256,7 +1250,6 @@ return (
                         </h3>
                         <p className="text-sm text-muted-foreground"></p>
                         <p>The following is an example of what BEPC system button should look like.</p>
-                        <br></br>
                       </div>
                     </div>
 
@@ -1265,7 +1258,7 @@ return (
                       <BepcButton></BepcButton>
                     </Card>
 
-                    <p className='my-2'>Click here to see code</p>
+                    <p className='my-4'>Click here to see code</p>
 
                     <Dialog>
                       <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
@@ -1299,6 +1292,150 @@ return (
                           <ScrollArea className='w-[60vw]'></ScrollArea>
                           <div className="dialog-content">
                             <CodeSnippet code={buttonCss} language="javascript" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Separator className="my-6" />
+
+                    {/*====== Button outlined ======*/}
+
+                    <div className="menu-colors flex items-center justify-between my-2">
+                      <div className="space-y-1">
+                        <h3 className="text-2xl font-semibold tracking-tight">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        className="w-6 h-6 inline-svg">
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                        </svg>
+                          Button outline
+                        </h3>
+                        <p className="text-sm text-muted-foreground"></p>
+                        <p>The following is an example of what BEPC system button outlined should look like.</p>
+                      </div>
+                    </div>
+
+                    <h1 className="text-5x1 font-semibold tracking-tight my-3">Button outlined example</h1>
+                    <Card className='p-3'>
+                      <BepcButtonOutline></BepcButtonOutline>
+                    </Card>
+
+                    <p className='my-4'>Click here to see code</p>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>HTML</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a button like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={buttonOutlineHtml} language="html" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>CSS</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>CSS</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a button like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={buttonOutlineCss} language="css" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Separator className="my-6" />
+
+                    {/*====== Icon button ======*/}
+
+                    <div className="menu-colors flex items-center justify-between my-2">
+                      <div className="space-y-1">
+                        <h3 className="text-2xl font-semibold tracking-tight">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        className="w-6 h-6 inline-svg">
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                        </svg>
+                          Icon button
+                        </h3>
+                        <p className="text-sm text-muted-foreground"></p>
+                        <p>The following is an example of what BEPC system icon button should look like.</p>
+                      </div>
+                    </div>
+
+                    <h1 className="text-5x1 font-semibold tracking-tight my-3">Icon button example</h1>
+                    <Card className='p-3'>
+                      <BepcIconButton></BepcIconButton>
+                    </Card>
+
+                    <p className='my-4'>Click here to see code</p>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>HTML</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a icon button like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={iconButtonHtml} language="html" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>CSS</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>CSS</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a icon button like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={iconButtonCss} language="css" />
                           </div>
 
                         </DialogHeader>
