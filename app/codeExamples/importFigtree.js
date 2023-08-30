@@ -1,3 +1,3 @@
-const importFigtree = `@import url('https://fonts.googleapis.com/css2?family=Figtree&display=swap');`;
+const importFigtree = `https://fonts.google.com/specimen/Figtree?query=figtree`;
 
 export default importFigtree;
