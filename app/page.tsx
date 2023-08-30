@@ -56,6 +56,7 @@ import BepcTableDark from '@/components/custom-components/BepcTableDark'
 import BepcTableVariants from '@/components/custom-components/BepcTableVariants'
 import BepcTab from '@/components/custom-components/BepcTab'
 import BepcTabDark from '@/components/custom-components/BepcTabDark';
+import BepcButton from '@/components/custom-components/BepcButton';
 
 //String de codigos
 import howToUse from './codeExamples/howToUse';
@@ -75,6 +76,8 @@ import lightTabJs from './codeExamples/lightTabJs';
 import darkTabHtml from './codeExamples/darkTabHtml';
 import darkTabCss from './codeExamples/darkTabCss';
 import darkTabJs from './codeExamples/darkTabJs';
+import buttonHtml from './codeExamples/buttonHtml';
+import buttonCss from './codeExamples/buttonCss';
 
 import { Scroll } from 'lucide-react';
 
@@ -1223,6 +1226,79 @@ return (
                           <ScrollArea className='w-[60vw]'></ScrollArea>
                           <div className="dialog-content">
                             <CodeSnippet code={darkTabJs} language="javascript" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <br></br>
+
+                    <Separator className="my-6" />
+
+                    <div className="menu-colors flex items-center justify-between my-2">
+                      <div className="space-y-1">
+                        <h3 className="text-2xl font-semibold tracking-tight">
+                        <svg 
+                        xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        className="w-6 h-6 inline-svg">
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M15.91 11.672a.375.375 0 010 .656l-5.603 3.113a.375.375 0 01-.557-.328V8.887c0-.286.307-.466.557-.327l5.603 3.112z" />
+                        </svg>
+                          Button
+                        </h3>
+                        <p className="text-sm text-muted-foreground"></p>
+                        <p>The following is an example of what BEPC system button should look like.</p>
+                        <br></br>
+                      </div>
+                    </div>
+
+                    <h1 className="text-5x1 font-semibold tracking-tight my-3">Buttons examples</h1>
+                    <Card className='p-3'>
+                      <BepcButton></BepcButton>
+                    </Card>
+
+                    <p className='my-2'>Click here to see code</p>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>HTML</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a button like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={buttonHtml} language="javascript" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>CSS</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>CSS</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a button like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={buttonCss} language="javascript" />
                           </div>
 
                         </DialogHeader>
