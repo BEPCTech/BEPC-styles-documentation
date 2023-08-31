@@ -671,7 +671,7 @@ return (
                     </Card>
 
                     <Card className="p-3 my-5">
-                      <p className="figtree-subtext my-3">Figtree subtext</p>
+                      <p className="figtree-subtext my-3">Figtree subtext111</p>
                       <p>Caption / Subtext - Figtree 14 px regular</p>
                       <p>Use for subtexts</p>
                     </Card>
