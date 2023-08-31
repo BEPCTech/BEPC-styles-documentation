@@ -4,12 +4,16 @@ import React from 'react';
 const BEPCInputText: React.FC = () => {
 return (
 <>
+
+  {/*Input text*/}
   <p className='my-3'>Input text here!</p>
   <input type="text" className="bepc-input-text" placeholder='Placeholder text here'></input>
 
+  {/*Input password*/}
   <p className='my-3'>Input password here!</p>
   <input type="password" className="bepc-input-text" placeholder='Placeholder text here'></input>
 
+  {/*Input text search*/}
   <p className='my-3'>Input search here!</p>
   <div className="input-container">
     <input type="text" className="bepc-input-text" placeholder='Search...'></input>
@@ -22,6 +26,7 @@ return (
     </div>
   </div>
 
+  {/*Input text error*/}
   <p className='my-3'>Input error here!</p>
   <div className="input-container">
     <input type="text" className="bepc-input-text-error" placeholder='Error!'></input>
@@ -33,6 +38,7 @@ return (
     </div>
   </div>
 
+  {/*Input text success*/}
   <p className='my-3'>Input success here!</p>
   <div className="input-container">
     <input type="text" className="bepc-input-text-success" placeholder='Success!'></input>
