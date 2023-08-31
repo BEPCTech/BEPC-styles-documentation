@@ -1516,55 +1516,6 @@ return (
                       </DialogContent>
                     </Dialog>
 
-
-                    <h1 className="text-5x1 font-semibold tracking-tight my-3">Search input example</h1>
-                    <Card className='p-3'>
-                      <BepcInputText></BepcInputText>
-                    </Card>
-
-                    <p className='my-4'>Click here to see code</p>
-
-                    <Dialog>
-                      <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>HTML</DialogTitle>
-
-                          <DialogDescription>
-                            <p>And this is the basic structure to create a icon button like this with HTML, CSS and JS.
-                              Depending on the requirements of the project, it is possible to modify it.</p>
-                          </DialogDescription>
-                          <ScrollArea className='w-[60vw]'></ScrollArea>
-                          <div className="dialog-content">
-                            <CodeSnippet code={inputTextHtml} language="html" />
-                          </div>
-
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
-
-                    <Dialog>
-                      <DialogTrigger><Button className='mr-2'>CSS</Button></DialogTrigger>
-                      <DialogContent>
-                        <DialogHeader>
-                          <DialogTitle>CSS</DialogTitle>
-
-                          <DialogDescription>
-                            <p>And this is the basic structure to create a icon button like this with HTML, CSS and JS.
-                              Depending on the requirements of the project, it is possible to modify it.</p>
-                          </DialogDescription>
-                          <ScrollArea className='w-[60vw]'></ScrollArea>
-                          <div className="dialog-content">
-                            <CodeSnippet code={inputTextCss} language="css" />
-                          </div>
-
-                        </DialogHeader>
-                      </DialogContent>
-                    </Dialog>
-
-                    <Separator className="my-6" />
-
-
                     {/*
                     <ScrollArea>
                       <div className="flex space-x-4 pb-4">
