@@ -61,6 +61,9 @@ import BepcButtonOutline from '@/components/custom-components/BepcButtonOutline'
 import BepcIconButton from '@/components/custom-components/BepcIconButton';
 import BepcInputText from '@/components/custom-components/BepcInputText';
 import BepcModal from '@/components/custom-components/BepcModal';
+import BepcModalLeft from '@/components/custom-components/BepcModalLeft';
+import BepcModalImage from '@/components/custom-components/BepcModalImage';
+import BepcDropdown from '@/components/custom-components/BepcDropdown';
 
 //String de codigos
 import howToUse from './codeExamples/howToUse';
@@ -88,6 +91,11 @@ import iconButtonHtml from './codeExamples/iconButtonHtml';
 import iconButtonCss from './codeExamples/iconButtonCss';
 import inputTextHtml from './codeExamples/inputTextHtml';
 import inputTextCss from './codeExamples/inputTextCss';
+import modalHtml from './codeExamples/modalHtml';
+import modalCss from './codeExamples/modalCss';
+import modalJs from './codeExamples/modalJs';
+import dropdownHtml from './codeExamples/dropdownHtml';
+import dropdownCss from './codeExamples/dropdownCss';
 
 import { Scroll } from 'lucide-react';
 
@@ -1498,16 +1506,11 @@ return (
                     <div className="menu-colors flex items-center justify-between my-2">
                       <div className="space-y-1">
                         <h3 className="text-2xl font-semibold tracking-tight">
-                        <svg xmlns="http://www.w3.org/2000/svg" 
-                        fill="none" 
-                        viewBox="0 0 24 24" 
-                        stroke-width="1.5" 
-                        stroke="currentColor" className="inline-svg w-6 h-6">
-                          <path stroke-linecap="round" 
-                          stroke-linejoin="round" 
-                          d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
-                        </svg>
-
+                          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                            stroke="currentColor" className="inline-svg w-6 h-6">
+                            <path stroke-linecap="round" stroke-linejoin="round"
+                              d="M3.75 3.75v4.5m0-4.5h4.5m-4.5 0L9 9M3.75 20.25v-4.5m0 4.5h4.5m-4.5 0L9 15M20.25 3.75h-4.5m4.5 0v4.5m0-4.5L15 9m5.25 11.25h-4.5m4.5 0v-4.5m0 4.5L15 15" />
+                          </svg>
 
                           Modal
                         </h3>
@@ -1518,8 +1521,138 @@ return (
 
                     <h1 className="text-5x1 font-semibold tracking-tight my-3">Modal example</h1>
                     <Card className='p-5'>
-                      <BepcModal></BepcModal>
+                      <div className="mx-2"><BepcModal></BepcModal> <BepcModalLeft></BepcModalLeft> <BepcModalImage></BepcModalImage></div>
+
                     </Card>
+
+                    <p className='my-4'>Click here to see code</p>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>HTML</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a modal like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={modalHtml} language="html" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>CSS</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>CSS</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a modal like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={modalCss} language="css" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>JS</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>JS</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a modal like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={modalJs} language="js" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Separator className="my-6" />
+
+                    {/*====== Dropdown ======*/}
+
+                    <div className="menu-colors flex items-center justify-between my-2">
+                      <div className="space-y-1">
+                        <h3 className="text-2xl font-semibold tracking-tight">
+                        <svg xmlns="http://www.w3.org/2000/svg" 
+                        fill="none" 
+                        viewBox="0 0 24 24" 
+                        stroke-width="1.5" 
+                        stroke="currentColor" 
+                        className="w-6 h-6 inline-svg">
+                        <path stroke-linecap="round" 
+                        stroke-linejoin="round" 
+                        d="M3 4.5h14.25M3 9h9.75M3 13.5h9.75m4.5-4.5v12m0 0l-3.75-3.75M17.25 21L21 17.25" />
+                        </svg>
+                          Dropdown
+                        </h3>
+                        <p className="text-sm text-muted-foreground"></p>
+                        <p>The following is an example of what BEPC system dropdown should look like.</p>
+                      </div>
+                    </div>
+
+                    <h1 className="text-5x1 font-semibold tracking-tight my-3">Dropdown example</h1>
+                    <Card className='p-5'>
+                      <div className="mx-2"><BepcDropdown></BepcDropdown></div>
+
+                    </Card>
+
+                    <p className='my-4'>Click here to see code</p>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>HTML</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>HTML</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a dropdown like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={dropdownHtml} language="html" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
+
+                    <Dialog>
+                      <DialogTrigger><Button className='mr-2'>CSS</Button></DialogTrigger>
+                      <DialogContent>
+                        <DialogHeader>
+                          <DialogTitle>CSS</DialogTitle>
+
+                          <DialogDescription>
+                            <p>And this is the basic structure to create a dropdown like this with HTML, CSS and JS.
+                              Depending on the requirements of the project, it is possible to modify it.</p>
+                          </DialogDescription>
+                          <ScrollArea className='w-[60vw]'></ScrollArea>
+                          <div className="dialog-content">
+                            <CodeSnippet code={dropdownCss} language="css" />
+                          </div>
+
+                        </DialogHeader>
+                      </DialogContent>
+                    </Dialog>
 
                     {/*
                     <ScrollArea>
